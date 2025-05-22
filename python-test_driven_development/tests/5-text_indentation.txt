@@ -1,0 +1,20 @@
+>>> text_indentation("Hola. Qué tal? Todo bien: perfecto.")
+Hola.
+
+ Qué tal?
+
+ Todo bien:
+
+ perfecto.
+
+>>> text_indentation("Este texto no tiene signos especiales")
+Este texto no tiene signos especiales
+
+>>> text_indentation("Punto.final.")
+Punto.
+
+final.
+
+>>> text_indentation(98)
+Traceback (most recent call last):
+TypeError: text must be a string
