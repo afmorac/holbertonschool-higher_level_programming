@@ -3,19 +3,20 @@
 pero de forma controlada gracias al getter y setter.
 """
 
+
 class Square:
     """Representa un cuadrado. Permite acceder y cambiar el tamaño,
     pero solo si es un entero positivo.
     """
     def __init__(self, size=0):
-        """Inicializa el cuadrado con tamaño opcional.
-        Si el valor no es válido, lanza error.
+        """Inicializa el cuadrado.
+        Verifica que el tamaño sea entero y no negativo.
         """
         self.size = size
 
     @property
     def size(self):
-        """Devuelve el tamaño del cuadrado."""
+        """Devuelve el tamaño actual del cuadrado."""
         return self.__size
 
     @size.setter
