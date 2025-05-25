@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Este módulo define un rectángulo imprimible, 
+"""Este módulo define un rectángulo imprimible,
 comparable y que lleva la cuenta de sus instancias.
 """
 
