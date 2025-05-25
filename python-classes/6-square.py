@@ -3,8 +3,9 @@
 usando coordenadas con espacios (position).
 """
 
+
 class Square:
-    """Representa un cuadrado que se puede imprimir con '#' 
+    """Representa un cuadrado que se puede imprimir con '#'
     y mover usando una posición (x, y) de espacios y líneas vacías.
     """
     def __init__(self, size=0, position=(0, 0)):
@@ -34,9 +35,11 @@ class Square:
     @position.setter
     def position(self, value):
         """Valida y asigna la posición (x, y) del cuadrado."""
-        if (type(value) is not tuple or
+        if (
+            type(value) is not tuple or
             len(value) != 2 or
-            not all(type(num) is int and num >= 0 for num in value)):
+            not all(type(num) is int and num >= 0 for num in value)
+        ):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
@@ -52,10 +55,8 @@ class Square:
             print()
             return
 
-        # Imprime líneas vacías antes (posición vertical)
         for _ in range(self.__position[1]):
             print()
 
-        # Imprime el cuadrado con espacios a la izquierda
         for _ in range(self.__size):
             print(" " * self.__position[0] + "#" * self.__size)
