@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-"""Este módulo define un cuadrado, lo puedes modificar, 
+"""Este módulo define un cuadrado, lo puedes modificar,
 sacar el área y también imprimirlo con '#'.
 """
+
 
 class Square:
     """Representa un cuadrado con tamaño ajustable.
