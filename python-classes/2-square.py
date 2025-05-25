@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-"""Este módulo define un cuadrado que guarda su tamaño, 
+"""Este módulo define un cuadrado que guarda su tamaño,
 pero ahora también valida que ese tamaño tenga sentido.
 """
+
 
 class Square:
     """Representa un cuadrado. Ahora chequea que el tamaño
