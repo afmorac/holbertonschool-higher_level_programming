@@ -1,15 +1,16 @@
 #!/usr/bin/python3
-"""Este módulo define un cuadrado con validación de tamaño 
+"""Este módulo define un cuadrado con validación de tamaño
 y también permite calcular su área.
 """
 
+
 class Square:
-    """Representa un cuadrado con tamaño validado.
-    Se puede calcular el área del cuadrado usando el método area().
+    """Representa un cuadrado. Ahora chequea que el tamaño
+    sea un número entero y que no sea negativo.
     """
     def __init__(self, size=0):
-        """Inicializa el cuadrado.
-        Verifica que el tamaño sea entero y no negativo.
+        """Inicializa el cuadrado. Si el size no es un entero
+        o es menor que 0, se lanza un error.
         """
         if type(size) is not int:
             raise TypeError("size must be an integer")
