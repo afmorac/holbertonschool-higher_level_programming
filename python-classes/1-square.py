@@ -3,6 +3,7 @@
 Ahora mismo no se valida ese tamaño, solo se guarda de manera privada.
 """
 
+
 class Square:
     """Clase que representa un cuadrado. Se guarda el tamaño de forma privada
     pa' que después podamos controlar mejor qué valores se permiten.
