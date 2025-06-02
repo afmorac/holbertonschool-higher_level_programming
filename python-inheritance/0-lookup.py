@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Este modulo tiene una funcion q te deja ver todo lo q tiene un objeto
-por dentro, como sus metodos y atributos disponibles, aunque algunos ni se usan.
+por dentro, como sus metodos y atributos disponibles.
 """
 
 
@@ -16,4 +16,5 @@ def lookup(obj):
         list: Una lista (tipo lista normal) con todos los nombres
         de metodos y cosas q tiene
     """
-    return dir(obj)  # usa dir, q es como un scanner pa ver lo q hay dentro del obj
+    # usa dir, q es como un scanner pa ver lo q hay dentro del obj
+    return dir(obj)
