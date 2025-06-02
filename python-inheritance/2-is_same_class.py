@@ -4,6 +4,7 @@ Funcion pa verificar si un objeto es exactamente de una clase,
 sin importar si hereda o no. Tiene q ser la misma clase exacta.
 """
 
+
 def is_same_class(obj, a_class):
     """
     Devuelve True si obj es exactamente una instancia de a_class.
