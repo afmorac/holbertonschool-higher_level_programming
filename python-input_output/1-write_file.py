@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-    """
-    Mod. define la funcion write_file
-    """
+"""
+Mod. define la funcion write_file
+"""
     
     
-    def write_file(filename="", text=""):
-         """
+def write_file(filename="", text=""):
+        """
         Func. escribir cadena a txt file 
         retornar numero de caracteres
         """
