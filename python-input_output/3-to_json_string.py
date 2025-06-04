@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-import json
 """
 Mod. define la funcion de to_json_string
 """
+
+
+import json
 
 
 def to_json_string(my_obj):
