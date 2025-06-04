@@ -3,6 +3,7 @@
 Func. que lee e imprime un archivo
 """
 
+
 def read_file(filename=""):
     """
     Lectura de archivo de texto y lo muestra en stdout
