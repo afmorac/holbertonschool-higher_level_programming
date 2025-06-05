@@ -12,6 +12,6 @@ class Student:
     """
     Funcion para guardar class Student
     """
-    def to_json(self)
+    def to_json(self):
         return self.__dict__
     
