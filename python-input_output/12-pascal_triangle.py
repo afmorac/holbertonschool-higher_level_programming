@@ -5,6 +5,10 @@ Triangulo de Pascal
 
 
 def pascal_triangle(n):
+    """
+    retorna lista de integers en forma de
+    triangulo pascal
+    """
     if n <= 0:
         return []
     triangle = [[1]]
