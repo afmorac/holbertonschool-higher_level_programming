@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 
+"""
 Devuelve diccionario con atributos de objeto
 para convertirlo a JSON serializable
 """
