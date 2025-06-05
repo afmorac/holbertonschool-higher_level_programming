@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Clase Student que convierte a JSON sus atributos
-opcion de filtracion anadida
+opción de filtración añadida
 """
 
 
@@ -11,12 +11,14 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-
-def to_json(self, attrs=None):
-    """
-    Devuelve diccionario de atributos con filtro
-    """
-    if isinstance(attrs, list) and all(isinstance(i, str) for i in attrs):
-        return {key: getattr(self, key) for key in attrs if hasattr(self, key)}
-    else:
-        return self.__dict__
+    def to_json(self, attrs=None):
+        """
+        Devuelve diccionario de atributos con filtro
+        """
+        if isinstance(attrs, list) and all(isinstance(i, str) for i in attrs):
+            return {
+                key: getattr(self, key)
+                for key in attrs
+                if hasattr(self, key)}
+        else:
+            return self.__dict__
