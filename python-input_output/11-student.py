@@ -10,23 +10,15 @@ class Student:
         self.last_name = last_name
         self.age = age
 
+    def to_json(self, attrs=None):
+        if isinstance(attrs, list) and all(isinstance(i, str) for i in attrs):
+            return {
+                key: getattr(self, key)
+                for key in attrs
+                if hasattr(self, key)
+            }
+        return self.__dict__
 
-"""
-funcion que permite decidir que atributos
-incluir
-"""
-
-
-def to_json(self, attrs=None):
-    if isinstance(attrs, list) and all(isinstance(i, str) for i in attrs):
-        return {
-            key: getattr(self, key)
-            for key in attrs
-            if hasattr(self, key)
-        }
-    return self.__dict__
-
-
-def reload_from_json(self, json):
-    for key, value in json.items():
-        setattr(self, key, value)
+    def reload_from_json(self, json):
+        for key, value in json.items():
+            setattr(self, key, value)
