@@ -59,6 +59,9 @@ def products():
         data = read_sql_products(prod_id)
         if data is None:
             return render_template('product_display.html', error="Database error", products=None)
+        if prod_id is not None and not data:
+            return render_template('product_display.html', error="Product not found", products=None)
+
     else:
         return render_template('product_display.html', error="Wrong source", products=None)
 
